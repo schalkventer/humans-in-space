@@ -1,10 +1,11 @@
 {
   "name": "humans-in-space",
   "version": "1.0.0",
-  "description": "A JavaScript micro-site that uses ES modules to display the humans currently in space.",
+  "description": "A JavaScript micro-site that uses ES modules and Parcel transpilation to display the humans currently in space.",
   "main": "scripts.js",
   "scripts": {
-    "start": "serve"
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [
     "space",
@@ -14,6 +15,9 @@
   "author": "Schalk Venter",
   "license": "ISC",
   "devDependencies": {
-    "serve": "^9.4.0"
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "tippy.js": "^1.4.2"
   }
 }
