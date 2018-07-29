@@ -1,17 +1,17 @@
-# 🚀 Humans in Space
+#  🚀 Humans in Space &middot; ![](https://img.shields.io/badge/stability-stable-green.svg) ![](https://img.shields.io/uptimerobot/ratio/m780765392-da182792b433b6871ee87dbe.svg)
 
-An example micro-site used in ES6 workshop that visualises all humans currently in space.
+An example micro-site used in [ES6 workshop](https://slides.com/schalkventer/what-the-es6) to show how ES6 can be used in production.
 
 ## Overview
 
 ### Endpoint
-- Consumes [a custom endpoint](https://8p6o1pcool.execute-api.us-east-1.amazonaws.com/default/people-in-space) on the client-side.
-- Endpoint uses a AWS Lambda behind the scenes to repurpose `https://www.howmanypeopleareinspacerightnow.com/` into a simpler format that is publicly accesible (by strippping CORS and authentication).
+- Consumes [custom endpoint](https://8p6o1pcool.execute-api.us-east-1.amazonaws.com/default/people-in-space) on the client-side.
+- Endpoint uses AWS Lambda behind the scenes to repurpose `https://www.howmanypeopleareinspacerightnow.com/` into a simpler format that is publicly accesible (by strippping CORS and authentication).
 
 ### Branches
 - There are two branches in the repository: `master` and `tranpilation`.
-- The form serves as an example in using native ES modules without transpilation.
-- The latter is an example in using [ParcelJS](https://parceljs.org/) to transpile ES modules.
+- `master` serves as an example of how native ES modules can be used in production without transpilation.
+- `transpilation` serves as an example how [ParcelJS](https://parceljs.org/) can be used to transpile and deploy ES6 code [to Netlify](https://humans-in-space.netlify.com/).
 
 ## Getting started
 1. Install [NodeJS](https://nodejs.org/en/download/).
