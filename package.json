@@ -1,0 +1,19 @@
+{
+  "name": "humans-in-space",
+  "version": "1.0.0",
+  "description": "A JavaScript micro-site that uses ES modules to display the humans currently in space.",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [
+    "space",
+    "astronauts",
+    "es-modules"
+  ],
+  "author": "Schalk Venter",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^9.4.0"
+  }
+}

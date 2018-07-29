@@ -1,0 +1,108 @@
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #222;
+  color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+.loading {
+  margin: 0 auto;
+  width: 6.25rem;
+  height: 6.25rem;
+  position: relative;
+}
+
+.earth {
+  width: 6.25rem;
+  height: 6.25rem;
+  line-height: 2;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.rocket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-left: 7px dotted #555;
+  border-bottom: 7px dotted #333;
+  border-top: 7px solid transparent;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+.text {
+  margin-top: 6.25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 100px;
+  
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+@media screen and (max-width: 700px) {
+  .item {
+    width: 100% !important;
+  }
+  
+  .item.is-empty {
+    display: none;
+  }
+}
+
+.astronaut {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  fill: grey;
+}
+
+.animation {
+  height: 100%;
+  width: 100%;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+h1  {
+  text-align: center;
+}
+
