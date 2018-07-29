@@ -1,7 +1,10 @@
+import tippy from 'tippy.js';
 import fetchWrapper from './modules/fetchWrapper.js';
 import Space from './modules/Space.js';
 import createAstronaut from './modules/createAstronuat.js';
 import renderHtml from './modules/renderHtml.js';
+import './node_modules/tippy.js/dist/tippy.css';
+import './styles.css';
 
 
 const { getSpace, addItem } = new Space(5, 5);
